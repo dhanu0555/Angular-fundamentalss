@@ -1,0 +1,12 @@
+<h2>ngSwitch Example</h2>
+
+<div [ngSwitch]="selectedOption">
+  <div *ngSwitchCase="'option1'">You selected Option 1</div>
+  <div *ngSwitchCase="'option2'">You selected Option 2</div>
+  <div *ngSwitchCase="'option3'">You selected Option 3</div>
+  <div *ngSwitchDefault>No option selected</div>
+</div>
+
+<button (click)="changeOption('option1')">Select Option 1</button>
+<button (click)="changeOption('option2')">Select Option 2</button>
+<button (click)="changeOption('option3')">Select Option 3</button>
